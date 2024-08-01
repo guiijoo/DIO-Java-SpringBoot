@@ -6,5 +6,6 @@
     ],
     "files.autoSaveWhenNoErrors": true,
     "files.autoSave": "onFocusChange",
-    "debug.terminal.clearBeforeReusing": true
+    "debug.terminal.clearBeforeReusing": true,
+    "explorer.compactFolders": false
 }
