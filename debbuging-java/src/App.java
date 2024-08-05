@@ -15,7 +15,7 @@ public class App {
     static void b()
     {
         System.out.println("Execução de b");
-        for(int i =0; i<=4; i++) System.out.println(i);
+        for(int i =1; i<=4; i++) System.out.println(i);
         c();
         System.out.println("Finalização de b"); 
     }
@@ -23,7 +23,7 @@ public class App {
     static void c()
     {
         System.out.println("Execução de c");
-        // Thread.dumpStack();
+        Thread.dumpStack();
         System.out.println("Finalização de c"); 
     }
 }
