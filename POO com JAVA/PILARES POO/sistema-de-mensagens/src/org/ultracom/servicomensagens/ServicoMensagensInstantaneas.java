@@ -1,25 +1,7 @@
 package org.ultracom.servicomensagens;
-public class ServicoMensagensInstantaneas {
+public abstract class ServicoMensagensInstantaneas {
 
-    public void enviarMensagem()
-    {
-        validandoInternet();
-        System.out.println("enviando mensagem");
-        salvarHistoricoMensagem();
-    }
+    public abstract void enviarMensagem();
+    public abstract void receberMensagem();
 
-    public void receberMensagem()
-    {
-        System.out.println("recebendo mensagem");
-    }
-    
-    private void validandoInternet()
-    {
-        System.out.println("Verificando conexão com a internet");
-    }
-
-    private void salvarHistoricoMensagem()
-    {
-        System.out.println("salvando mensagem no historico");
-    }
 }
