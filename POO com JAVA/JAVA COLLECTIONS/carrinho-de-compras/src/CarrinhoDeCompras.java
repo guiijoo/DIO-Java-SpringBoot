@@ -17,7 +17,7 @@ public class CarrinhoDeCompras {
 
     public void removerItem(String nome)
     {
-        List<Item> itensParaRemover = new ArrayList();
+        List<Item> itensParaRemover = new ArrayList<>();
         for(Item i : itemList)
         {
             if(i.getNome().equalsIgnoreCase(nome)) itensParaRemover.add(i);
