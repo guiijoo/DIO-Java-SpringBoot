@@ -64,4 +64,9 @@ public class CatalogoLivros {
         return livroPesquisa;
     }
 
+    public List<Livro> exibirLivros()
+    {
+        return listaLivros;
+    }
+
 }
