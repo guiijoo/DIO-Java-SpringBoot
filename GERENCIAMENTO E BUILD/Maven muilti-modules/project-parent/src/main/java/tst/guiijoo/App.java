@@ -1,4 +1,4 @@
-package com.guiijoo;
+package tst.guiijoo;
 
 /**
  * Hello world!

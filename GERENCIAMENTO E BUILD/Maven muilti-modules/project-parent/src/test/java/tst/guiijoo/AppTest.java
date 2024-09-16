@@ -1,4 +1,4 @@
-package com.guiijoo;
+package tst.guiijoo;
 
 import static org.junit.Assert.assertTrue;
 
