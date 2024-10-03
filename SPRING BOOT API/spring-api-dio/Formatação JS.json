@@ -8,10 +8,12 @@
     "accountLimit": 1000.00
   },
   
-  "features":{
+  "features":[{
+    
     "icon": "URL",
     "description": "Descrição da feature"
-  },
+    
+  }],
   
   "card":
   {
@@ -20,8 +22,8 @@
   },
   
   "news":
-  {
+  [{
     "icon": "URL",
     "description": "Descrição da feature"
-  }
+  }]
 }
