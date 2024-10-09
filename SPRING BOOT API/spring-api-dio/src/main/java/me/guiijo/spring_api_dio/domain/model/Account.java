@@ -2,32 +2,50 @@ package me.guiijo.spring_api_dio.domain.model;
 
 public class Account {
 
+    private Long id;
     private String accountNumber;
     private String accountAgency;
-    private float accountBalance;
-    private float accountLimit;
-    
-    public Account(String accountNumber, String accountAgency, float accountBalance, float accountLimit) {
-        this.accountNumber = accountNumber;
-        this.accountAgency = accountAgency;
-        this.accountBalance = accountBalance;
-        this.accountLimit = accountLimit;
+    private Double accountBalance;
+    private Double accountLimit;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getAccountNumber() {
         return accountNumber;
     }
 
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
     public String getAccountAgency() {
         return accountAgency;
     }
 
-    public float getAccountBalance() {
+    public void setAccountAgency(String accountAgency) {
+        this.accountAgency = accountAgency;
+    }
+
+    public Double getAccountBalance() {
         return accountBalance;
     }
 
-    public float getAccountLimit() {
+    public void setAccountBalance(Double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
+    public Double getAccountLimit() {
         return accountLimit;
     }
-    
+
+    public void setAccountLimit(Double accountLimit) {
+        this.accountLimit = accountLimit;
+    }
+
 }
