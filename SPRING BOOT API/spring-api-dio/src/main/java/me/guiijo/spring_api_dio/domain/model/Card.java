@@ -1,5 +1,7 @@
 package me.guiijo.spring_api_dio.domain.model;
 
+import java.math.BigDecimal;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,13 +19,13 @@ public class Card {
     private String number;
 
     @Column(name = "account_limit", scale = 13, precision = 2)
-    private Double limit;
+    private BigDecimal limit;
 
     public String getNumber() {
         return number;
     }
 
-    public Double getLimit() {
+    public BigDecimal getLimit() {
         return limit;
     }
 
@@ -39,7 +41,7 @@ public class Card {
         this.number = number;
     }
 
-    public void setLimit(Double limit) {
+    public void setLimit(BigDecimal limit) {
         this.limit = limit;
     }
 

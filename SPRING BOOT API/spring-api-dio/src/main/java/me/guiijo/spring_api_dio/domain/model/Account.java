@@ -1,5 +1,7 @@
 package me.guiijo.spring_api_dio.domain.model;
 
+import java.math.BigDecimal;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,10 +21,10 @@ public class Account {
     private String accountAgency;
 
     @Column(scale = 13, precision = 2)
-    private Double accountBalance;
+    private BigDecimal accountBalance;
 
     @Column(name = "additional_limit", scale = 13, precision = 2)
-    private Double accountLimit;
+    private BigDecimal accountLimit;
 
     public Long getId() {
         return id;
@@ -48,19 +50,19 @@ public class Account {
         this.accountAgency = accountAgency;
     }
 
-    public Double getAccountBalance() {
+    public BigDecimal getAccountBalance() {
         return accountBalance;
     }
 
-    public void setAccountBalance(Double accountBalance) {
+    public void setAccountBalance(BigDecimal accountBalance) {
         this.accountBalance = accountBalance;
     }
 
-    public Double getAccountLimit() {
+    public BigDecimal getAccountLimit() {
         return accountLimit;
     }
 
-    public void setAccountLimit(Double accountLimit) {
+    public void setAccountLimit(BigDecimal accountLimit) {
         this.accountLimit = accountLimit;
     }
 
