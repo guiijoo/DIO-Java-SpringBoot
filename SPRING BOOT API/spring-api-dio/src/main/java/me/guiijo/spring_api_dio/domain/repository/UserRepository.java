@@ -5,6 +5,6 @@ import me.guiijo.spring_api_dio.domain.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    boolean existsByAccountNumber(String accountNumber);
+    boolean existsByAccountAccountNumber(String accountNumber);
 
 }
