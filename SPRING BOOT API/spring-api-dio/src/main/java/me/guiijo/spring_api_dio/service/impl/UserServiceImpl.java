@@ -24,22 +24,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User create(User user) {
-        if(user.getId() != null && userRepository.existsById(user.getId()))
-        {
-            
+        if (userRepository.existsByAccountNumber(user.getAccount().getAccountNumber())) {
+            throw new IllegalArgumentException("This account number already exists!");
         }
+        return userRepository.save(user);
     }
-
-    @Override
-    public User update(Long id, User user) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'update'");
-    }
-
-    @Override
-    public void delete(Long id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'delete'");
-    }
-
 }
